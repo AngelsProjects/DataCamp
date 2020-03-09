@@ -4,23 +4,23 @@ String Methods
 Strings come with a bunch of methods. Follow the instructions closely to discover some of them. If
 you want to discover them in more detail, you can always type help(str) in the IPython Shell.
 
-A string place has already been created for you to experiment with.
+A string room has already been created for you to experiment with.
 
 Instructions
--Use the upper() method on place and store the result in room_up. Use the dot notation.
--Print out place and place_up. Did both change?
--Print out the number of o's on the variable place by calling count() on place and passing the
-letter "o" as an input to the method. We're talking about the variable place, not the word "place"!
+-Use the upper() method on room and store the result in room_up. Use the dot notation.
+-Print out room and room_up. Did both change?
+-Print out the number of o's on the variable room by calling count() on room and passing the
+letter "o" as an input to the method. We're talking about the variable room, not the word "room"!
 '''
-# string to experiment with: place
-place = "poolhouse"
+# string to experiment with: room
+room = "poolhouse"
 
-# Use upper() on place: place_up
-place_up = place.upper()
+# Use upper() on room: room_up
+room_up = room.upper()
 
-# Print out place and place_up
-print(place)
-print(place_up)
+# Print out room and room_up
+print(room)
+print(room_up)
 
-# Print out the number of o's in place
-print(place.count('o'))
+# Print out the number of o's in room
+print(room.count('o'))
