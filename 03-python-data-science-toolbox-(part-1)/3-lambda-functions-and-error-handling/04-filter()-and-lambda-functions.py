@@ -18,7 +18,7 @@ object to result.
 -Convert result to a list and print out the list.
 '''
 # Create a list of strings: fellowship
-fellowship = ['frodo', 'samwise', 'merry', 'aragorn', 'legolas', 'boromir', 'gimli']
+fellowship = ['frodo', 'samwise', 'merry', 'pippin', 'aragorn', 'boromir', 'legolas', 'gimli', 'gandalf']
 
 # Use filter() to apply a lambda function over fellowship: result
 result = filter(lambda member: len(member) > 6 , fellowship)
