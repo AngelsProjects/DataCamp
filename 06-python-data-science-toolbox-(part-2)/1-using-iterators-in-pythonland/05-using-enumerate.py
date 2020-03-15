@@ -25,7 +25,7 @@ mutants = ['charles xavier',
             'bobby drake', 
             'kurt wagner', 
             'max eisenhardt', 
-            'kitty pride']
+            'kitty pryde']
 
 # Create a list of tuples: mutant_list
 mutant_list = list(enumerate(mutants))
