@@ -24,11 +24,11 @@ for name in flash:
     print(name)
 
 
-# Create an iterator for flash: superspeed
-superspeed = iter(flash)
+# Create an iterator for flash: superhero
+superhero = iter(flash)
 
 # Print each item from the iterator
-print(next(superspeed))
-print(next(superspeed))
-print(next(superspeed))
-print(next(superspeed))
+print(next(superhero))
+print(next(superhero))
+print(next(superhero))
+print(next(superhero))
