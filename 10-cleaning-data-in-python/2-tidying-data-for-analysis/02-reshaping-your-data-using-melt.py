@@ -34,7 +34,7 @@ airquality = pd.read_csv('../_datasets/airquality.csv')
 print(airquality.head())
 
 # Melt airquality: airquality_melt
-airquality_melt = pd.melt(frame=airquality, id_vars=['Month', 'Day'])
+airquality_melt = pd.melt(frame=airquality, id_vars=['Date'])
 
 # Print the head of airquality_melt
 print(airquality_melt.head())

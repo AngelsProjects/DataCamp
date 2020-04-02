@@ -27,3 +27,4 @@ Possible Answers
 -df1; the rows are not all separate observations.
 '''
 
+#In both datasets, Date identifies each observation.

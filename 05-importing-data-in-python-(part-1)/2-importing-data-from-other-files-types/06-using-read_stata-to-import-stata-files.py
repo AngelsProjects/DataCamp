@@ -21,3 +21,5 @@ df = pd.read_stata('../_datasets/disarea.dta')
 
 
 print(df.head())
+
+# df = pd.read_stata('disarea.dta')

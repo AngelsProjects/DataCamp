@@ -30,7 +30,7 @@ airquality_melt = pd.melt(frame=airquality, id_vars=['Month', 'Day'], var_name='
 print(airquality_melt.head())
 
 # Pivot airquality_melt: airquality_pivot
-airquality_pivot = airquality_melt.pivot_table(index=['Month', 'Day'], columns='measurement', values='reading')
+airquality_pivot = airquality_melt.pivot_table(index=['Date'], columns='measurement', values='reading')
 
 # Print the head of airquality_pivot
 print(airquality_pivot.head())

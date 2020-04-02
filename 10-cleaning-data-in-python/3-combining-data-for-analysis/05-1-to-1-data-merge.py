@@ -12,9 +12,9 @@ INSTRUCTIONS
 Merge the site and visited DataFrames on the 'name' column of site and 'site' column of visited.
 Print the merged DataFrame o2o.
 '''
-# Merge the DataFrames: m2o
-m2o = pd.merge(left=site, right=visited, left_on='name', right_on='site')
+# Merge the DataFrames: o2o
+o2o = pd.merge(left=site, right=visited, left_on='name', right_on='site')
 
-# Print m2o
-print(m2o)
+# Print o2o
+print(o2o)
 

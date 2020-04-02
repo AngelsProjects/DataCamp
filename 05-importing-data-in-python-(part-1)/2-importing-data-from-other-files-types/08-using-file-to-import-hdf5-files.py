@@ -18,3 +18,5 @@ filename = '../_datasets/LIGO_data.hdf5'
 h5py_data = h5py.File(filename, 'r')
 
 print(type(h5py_data))
+
+# h5py_data = h5py.File(h5py_file, 'r')

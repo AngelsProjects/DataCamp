@@ -25,15 +25,15 @@ import re
 
 tips = pd.read_csv('../_datasets/tips.csv')
 
-# Define recode_sex()
-def recode_sex(sex_value):
+# Define recode_gender()
+def recode_gender(gender):
 
-    # Return 1 if sex_value is 'Male'
-    if sex_value == 'Male':
+    # Return 1 if gender is 'Male'
+    if gender == 'Male':
         return 1
     
-    # Return 0 if sex_value is 'Female'    
-    elif sex_value == 'Female':
+    # Return 0 if gender is 'Female'    
+    elif gender == 'Female':
         return 0
     
     # Return np.nan    
@@ -41,7 +41,7 @@ def recode_sex(sex_value):
         return np.nan
 
 # Apply the function to the sex column
-tips['sex_recode'] = tips.sex.apply(recode_sex)
+tips['sex_recode'] = tips.sex.apply(recode_gender)
 
 # Print the first five rows of tips
 print(tips.head())
