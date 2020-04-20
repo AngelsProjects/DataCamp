@@ -15,16 +15,37 @@ Resample sunny by day and compute the count. Assign the result to total_hours.
 Divide sunny_hours by total_hours. Assign to sunny_fraction.
 Make a box plot of sunny_fraction.
 '''
-# Create a Boolean Series for sunny days: sunny
-sunny = df_clean['sky_condition'] == 'CLR'
+# Using df_clean, when is sky_condition 'CLR'?
+is_sky_clear = df_clean['sky_condition'] == 'CLR'
 
-# Resample the Boolean Series by day and compute the sum: sunny_hours
-sunny_hours = sunny.resample('D').sum()
+# Resample is_sky_clear by day
+resampled = is_sky_clear.resample('D')
 
-# Resample the Boolean Series by day and compute the count: total_hours
-total_hours = sunny.resample('D').count()
+# See the result
+resampled
 
-# Divide sunny_hours by total_hours: sunny_fraction
+
+
+# From previous step
+is_sky_clear = df_clean['sky_condition'] == 'CLR'
+resampled = is_sky_clear.resample('D')
+
+# Calculate the number of sunny hours per day
+sunny_hours = resampled.sum()
+
+# Calculate the number of measured hours per day
+total_hours = resampled.count()
+
+# Calculate the fraction of hours per day that were sunny
+sunny_fraction = sunny_hours / total_hours
+
+
+
+# From previous steps
+is_sky_clear = df_clean['sky_condition'] == 'CLR'
+resampled = is_sky_clear.resample('D')
+sunny_hours = resampled.sum()
+total_hours = resampled.count()
 sunny_fraction = sunny_hours / total_hours
 
 # Make a box plot of sunny_fraction

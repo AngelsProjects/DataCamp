@@ -10,8 +10,8 @@ INSTRUCTIONS
 -Use pd.concat() to concatenate g1800s, g1900s, and g2000s into one DataFrame called gapminder. Make sure you pass DataFrames to pd.concat() in the form of a list.
 -Print the shape and the head of the concatenated DataFrame.
 '''
-# Concatenate the DataFrames row-wise
-gapminder = pd.concat([g1800s, g1900s, g2000s])
+# Concatenate the DataFrames column-wise
+gapminder = pd.concat([g1800s, g1900s, g2000s],axis=1)
 
 # Print the shape of gapminder
 print(gapminder.shape)
